@@ -1,0 +1,10 @@
+@import "vars";
+////teal.css
+$mainColor: hsl(180, 100%, 25%);
+$secondColor: hsl(180, 100%, 50%);
+$thirdColor: hsl(180, 100%, 65%);
+$hoverColor: hsl(180, 100%, 15%);
+
+body.teal{
+  @import "template-colors";
+}

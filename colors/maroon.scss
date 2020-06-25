@@ -1,0 +1,11 @@
+@import "vars";
+
+////maroon.css
+$mainColor: hsl(0, 100%, 25%);
+$secondColor: hsl(0, 100%, 50%);
+$thirdColor: hsl(0, 100%, 65%);
+$hoverColor: hsl(0, 100%, 15%);
+
+body.maroon{
+  @import "template-colors";
+}

@@ -1,0 +1,10 @@
+@import "vars";
+
+$mainColor: hsl(240, 100%, 50%);
+$secondColor: hsl(240, 100%, 75%);
+$thirdColor: hsl(240, 100%, 80%);
+$hoverColor: hsl(240, 100%, 40%);
+
+body.blue{
+  @import "template-colors";
+}

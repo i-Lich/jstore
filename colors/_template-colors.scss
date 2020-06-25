@@ -1,0 +1,549 @@
+//all colors
+////aqua.css
+//$mainColor: hsl(180, 100%, 50%);
+//$secondColor: hsl(180, 100%, 75%);
+//$thirdColor: hsl(180, 100%, 80%);
+//$hoverColor: hsl(180, 100%, 40%);
+////blue.css
+//$mainColor: hsl(240, 100%, 50%);
+//$secondColor: hsl(240, 100%, 75%);
+//$thirdColor: hsl(240, 100%, 80%);
+//$hoverColor: hsl(240, 100%, 40%);
+////fuchsia.css
+//$mainColor: hsl(300, 100%, 50%);
+//$secondColor: hsl(300, 100%, 75%);
+//$thirdColor: hsl(300, 100%, 80%);
+//$hoverColor: hsl(300, 100%, 40%);
+////gray.css
+//$mainColor: hsl(0, 0%, 50%);
+//$secondColor: hsl(0, 0%, 75%);
+//$thirdColor: hsl(0, 0%, 80%);
+//$hoverColor: hsl(0, 0%, 40%);
+////green.css
+//$mainColor: hsl(120, 100%, 25%);
+//$secondColor: hsl(120, 100%, 50%);
+//$thirdColor: hsl(120, 100%, 55%);
+//$hoverColor: hsl(120, 100%, 15%);
+////lime.css
+//$mainColor: hsl(120, 100%, 50%);
+//$secondColor: hsl(120, 100%, 75%);
+//$thirdColor: hsl(120, 100%, 90%);
+//$hoverColor: hsl(120, 100%, 40%);
+////maroon.css
+//$mainColor: hsl(0, 100%, 25%);
+//$secondColor: hsl(0, 100%, 50%);
+//$thirdColor: hsl(0, 100%, 65%);
+//$hoverColor: hsl(0, 100%, 15%);
+////navy.css
+//$mainColor: hsl(240, 100%, 25%);
+//$secondColor: hsl(240, 100%, 50%);
+//$thirdColor: hsl(240, 100%, 65%);
+//$hoverColor: hsl(240, 100%, 15%);
+////olive.css
+//$mainColor: hsl(60, 100%, 25%);
+//$secondColor: hsl(60, 100%, 50%);
+//$thirdColor: hsl(60, 100%, 65%);
+//$hoverColor: hsl(60, 100%, 15%);
+////purple.css
+//$mainColor: hsl(300, 100%, 25%);
+//$secondColor: hsl(300, 100%, 50%);
+//$thirdColor: hsl(300, 100%, 65%);
+//$hoverColor: hsl(300, 100%, 15%);
+////red.css
+//$mainColor: hsl(0, 100%, 50%);
+//$secondColor: hsl(0, 100%, 75%);
+//$thirdColor: hsl(0, 100%, 90%);
+//$hoverColor: hsl(0, 100%, 40%);
+////silver.css
+//$mainColor: hsl(0, 0%, 50%);
+//$secondColor: hsl(0, 0%, 75%);
+//$thirdColor: hsl(0, 0%, 90%);
+//$hoverColor: hsl(0, 0%, 40%);
+////teal.css
+//$mainColor: hsl(180, 100%, 25%);
+//$secondColor: hsl(180, 100%, 50%);
+//$thirdColor: hsl(180, 100%, 65%);
+//$hoverColor: hsl(180, 100%, 15%);
+////yellow.css
+//$mainColor: hsl(60, 100%, 50%);
+//$secondColor: hsl(60, 100%, 75%);
+//$thirdColor: hsl(60, 100%, 90%);
+//$hoverColor: hsl(60, 100%, 40%);
+
+.nav-menu a.all-menu:hover{
+  color: $mainColor;
+}
+
+  #selectColor{
+    select{
+      border: 1px solid $thirdColor;
+    }
+  }
+
+
+.jstore-tag {
+  color: $textColor;
+}
+.jstore-tag.lsp-button {
+  background: $mainColor;
+  color: $whiteColor;
+}
+#jstore-css .jstore-tag.lsp-button.jstore-out-of-stock {
+  background-color: $mainColor;
+}
+.jstore-tag.lsp-button-plus,
+.jstore-tag.lsp-button-minus,
+.jstore-tag.lsp-button-cross {
+  background: $mainColor;
+  color: $whiteColor;
+}
+
+#lsp-block-content .lsp-block-cart-item.lsp-block-cart-item-disabled .jstore-tag.jstore-tag.lsp-button-cross,
+.jstore-tag.lsp-block-cart .lsp-block-cart-item.lsp-block-cart-item-disabled .jstore-tag.jstore-tag.lsp-button-cross {
+  color: $whiteColor;
+  background: $summColor;
+}
+.jstore-tag.lsp-help-info {
+  color: $summColor;
+}
+.jstore-tag.lsp-button-plus:hover,
+.jstore-tag.lsp-button-minus:hover,
+.jstore-tag.lsp-button:hover{
+  background: $hoverColor;
+}
+.jstore-tag.lsp-button-plus.jstore-out-of-stock:hover {
+  background: $moreGrayColor;
+}
+#lsp-block-userinfo .lsp-block-userinfo-inner,
+.jstore-tag.lsp-js-user-auth,
+#lsp-block-gift .lsp-block-gift-inner,
+.jstore-tag.lsp-block-cart .lsp-block-cart-inner,
+#lsp-block-happy-hour .lsp-block-hh-inner,
+#lsp-block-restinfo .lsp-block-restinfo-inner,
+#jstore-css .lsp-block-restinfo-inner,
+.jstore-tag.jstore-block-search .jstore-block-search-inner {
+  border-color: $thirdColor;
+}
+.jstore-tag.lsp-block-cart .lsp-info-message{
+  background: $transparent;
+  color: $textColor;
+}
+.jstore-tag.lsp-block-cart .lsp-info-message .jstore-tag{
+  color: $textColor;
+}
+.jstore-tag.lsp-block-cart .lsp-block-cart-total,
+.jstore-tag.lsp-block-cart .lsp-block-cart-sum,
+#lsp-block-order-form .lsp-block-order-sum-item {
+  color: $mainColor;
+}
+.jstore-tag.lsp-block-cartpage .lsp-block-cart-item-discount,
+.jstore-tag.lsp-block-cartpage .lsp-block-cart-bonus,
+.jstore-tag.lsp-block-cart .lsp-block-cart-item-discount,
+.jstore-tag.lsp-block-cart .lsp-block-cart-bonus{
+  color: $mainColor;
+}
+.jstore-tag.lsp-block-cart .lsp-block-cart-item {
+  border-color: $grayColor;
+}
+.jstore-tag.lsp-block-cart .lsp-block-cart-item-price-c-count {
+  color: $hoverColor;
+}
+.jstore-tag.lsp-block-cart .lsp-block-cart-item-price-c-type {
+  color: $hoverColor;
+}
+.jstore-tag.lsp-block-cart .lsp-block-cart-item-amount-c-count {
+  color: $hoverColor;
+}
+.jstore-tag.lsp-block-cart .lsp-cart-item-modifier-c {
+  background: $mainColor;
+  color: $whiteColor;
+}
+.jstore-tag.lsp-block-cart .lsp-cart-item-modifier-c .jstore-tag{
+  color: $whiteColor;
+}
+#lsp-block-content .lsp-block-cart-item.lsp-block-cart-item-disabled .jstore-tag,
+.jstore-tag.lsp-block-cart .lsp-block-cart-item.lsp-block-cart-item-disabled .jstore-tag,
+.jstore-tag.lsp-block-cart .lsp-block-cart-item.jstore-cart-item-stock-max .jstore-tag.lsp-help-info
+{
+  color: $moreGrayColor;
+}
+.jstore-tag.lsp-block-cart .lsp-block-cart-item.lsp-block-cart-item-disabled .jstore-tag.lsp-button-minus,
+.jstore-tag.lsp-block-cart .lsp-block-cart-item.lsp-block-cart-item-disabled .jstore-tag.lsp-button-plus{
+  color: $whiteColor;
+}
+.jstore-tag.lsp-block-cart .lsp-block-cart-discount,
+.jstore-tag.lsp-block-cart .lsp-block-cart-sum,
+#lsp-block-order-form .lsp-block-order-sum-item{
+  color: $mainColor;
+}
+#lsp-block-items-list .lsp-block-item,
+#jstore-css .lsp-block-items-list .lsp-block-item {
+  border-color: $thirdColor;
+}
+.jstore-tag.lsp-block-item-tag.lsp-block-item-tag-status-active,
+.jstore-tag.lsp-block-tags-filter-status-active .lsp-block-tags-filter-item-icon,
+.jstore-tag.lsp-popup-inner .lsp-block-item-tag{
+  background-color: $mainColor;
+}
+
+.jstore-tag.lsp-block-item-tag:hover,
+.jstore-tag.lsp-block-tags-filter-item:hover .lsp-block-tags-filter-item-icon{
+  background-color: $mainColor;
+}
+
+#lsp-block-items-list .lsp-block-item-price-value,
+#jstore-css .lsp-block-items-list .lsp-block-item-price-value {
+  color: $mainColor;
+}
+#lsp-block-items-list .lsp-block-item-measurement,
+#jstore-css .lsp-block-items-list .lsp-block-item-measurement {
+  color: $mainColor;
+}
+#lsp-block-popup .lsp-popup-placeholder{
+  background: $blackColor;
+  background: $moreGrayColorOpacity;
+}
+#lsp-block-popup .lsp-popup-cont{
+  background: $whiteColor;
+}
+#lsp-block-items-popup .lsp-modifiers-container {
+  border-color: $grayColor;
+}
+#lsp-block-items-popup .lsp-popup-energy-cont {
+  border-color: $grayColor;
+}
+#lsp-block-items-popup .lsp-modifier-summ-value {
+  color: $mainColor;
+}
+#lsp-block-items-popup .lsp-modifier-summ-type {
+  color: $mainColor;
+}
+.jstore-tag.lsp-type-modifier-item .jstore-tag.lsp-button{
+  background: $transparent;
+  color: $textColor;
+}
+.jstore-tag.lsp-type-modifier-item .jstore-tag.lsp-button.lsp-button-red,
+.jstore-tag.lsp-type-modifier-item .jstore-tag.lsp-button:hover{
+  background: $mainColor;
+  color: $whiteColor;
+}
+#lsp-block-items-popup .lsp-modifier-group.lsp-modifier-group-error .lsp-modifier-group-title-text,
+#lsp-block-items-popup .lsp-modifier-group.lsp-modifier-group-error .lsp-modifer-group-minmax-delimeter,
+#lsp-block-items-popup .lsp-modifier-group.lsp-modifier-group-error .lsp-modifer-group-minmax-title,
+#lsp-block-items-popup .lsp-modifier-group.lsp-modifier-group-error .lsp-modifer-group-minmax-value {
+  color: $mainColor;
+}
+#lsp-block-items-popup .lsp-modifer-group-error {
+  color: $errorColor;
+}
+#lsp-block-city-change .cityItem,
+#lsp-block-terminal-change .cityItem {
+  border-color: $transparent;
+}
+#lsp-block-city-change .cityItem:hover,
+#lsp-block-terminal-change .cityItem:hover{
+  color: $whiteColor;
+  background-color: $mainColor;
+}
+.jstore-tag.lsp-block-menu-tree li a.child-selected,
+.jstore-tag.lsp-block-menu-tree li a.selected,
+.jstore-tag.lsp-block-menu-tree li a:hover {
+  color: $hoverColor;
+}
+#lsp-block-content .lsp-block-orders-list-status,
+#jstore-css .jstore-block .lsp-block-orders-list-status,
+.jstore-tag .lsp-block-orders-list-status{
+  color: $mainColor;
+}
+#lsp-block-content .lsp-block-orders-list td,
+#jstore-css .jstore-block .lsp-block-orders-list td,
+.jstore-tag .lsp-block-orders-list td{
+  border-color: $grayColor;
+}
+#lsp-block-content .lsp-block-orders-list tr:last-child td,
+#jstore-css .jstore-block .lsp-block-orders-list tr:last-child td,
+.jstore-tag .lsp-block-orders-list tr:last-child td{
+  border-color: $transparent;
+}
+#lsp-block-content .lsp-form .label-row-field select,
+#jstore-css .jstore-block .lsp-form .label-row-field select,
+#lsp-block-content .lsp-form .label-row-field input[type=text],
+#jstore-css .jstore-block .lsp-form .label-row-field input[type=text],
+#lsp-block-content .lsp-form .label-row-field input[type=number],
+#jstore-css .jstore-block .lsp-form .label-row-field input[type=number],
+#lsp-block-content .lsp-form .label-row-field input[type=password],
+#jstore-css .jstore-block .lsp-form .label-row-field input[type=password],
+#lsp-block-content .lsp-form .label-row-field textarea,
+#jstore-css .jstore-block .lsp-form .label-row-field textarea,
+.jstore-tag .lsp-form .label-row-field select,
+.jstore-tag .lsp-form .label-row-field input[type=text],
+.jstore-tag .lsp-form .label-row-field input[type=number],
+.jstore-tag .lsp-form .label-row-field input[type=password],
+.jstore-tag .lsp-form .label-row-field textarea{
+  border-color: $grayColor;
+  background: $whiteColor;
+}
+#lsp-block-content .lsp-form .lsp-form-success-mess,
+#jstore-css .jstore-block .lsp-form .lsp-form-success-mess,
+#lsp-block-content .lsp-form .lsp-form-error-mess,
+#jstore-css .jstore-block .lsp-form .lsp-form-error-mess,
+.jstore-tag .lsp-form .lsp-form-success-mess,
+.jstore-tag .lsp-form .lsp-form-error-mess {
+  background: $transparent;
+  color: $errorColor;
+}
+#lsp-block-content .lsp-form .lsp-form-success-mess,
+#jstore-css .jstore-block .lsp-form .lsp-form-success-mess,
+.jstore-tag .lsp-form .lsp-form-success-mess{
+  color: $mainColor;
+}
+#lsp-block-content .lsp-form .send-review-button,
+#jstore-css .jstore-block .lsp-form .send-review-button,
+.jstore-tag .lsp-form .send-review-button {
+  background-color: $mainColor;
+  color: $whiteColor;
+}
+#lsp-block-content .lsp-form .send-reg-button,
+#jstore-css .jstore-block .lsp-form .send-reg-button,
+.jstore-tag .lsp-form .send-reg-button {
+  border-color: $mainColor;
+  color: $whiteColor;
+}
+#lsp-block-kladr-autocomplete ul {
+  border-color: $moreGrayColor;
+  background-color: $whiteColor;
+}
+#lsp-block-kladr-autocomplete li {
+  border-color: $whiteColor $whiteColor $grayColor;
+}
+#lsp-block-kladr-autocomplete li.active {
+  background-color: $lessGrayColor;
+}
+#lsp-block-kladr-autocomplete ul {
+  background: $whiteColor;
+  border-color: $transparent $grayColor $grayColor $grayColor;
+}
+#lsp-block-kladr-autocomplete li {
+  border-color: $grayColor;
+}
+#lsp-block-kladr-autocomplete li:hover a,
+#lsp-block-kladr-autocomplete li a:hover {
+  color: $textColor;
+}
+#lsp-block-kladr-autocomplete li .ac-s {
+  color: $thirdColor;
+}
+#lsp-block-kladr-autocomplete li .ac-s2 {
+  color: $textColor;
+}
+#lsp-block-kladr-autocomplete li .ac-st {
+  color: $moreGrayColor;
+}
+#lsp-block-datetimepicker.xdsoft_datetimepicker {
+  box-shadow: 0 5px 15px -5px $moreGrayColor;
+  background: $whiteColor;
+  border-bottom-color: $moreGrayColor;
+  border-left-color: $grayColor;
+  border-right-color: $grayColor;
+  border-top-color: $grayColor;
+  color: $textColor;
+}
+#lsp-block-datetimepicker.xdsoft_datetimepicker iframe {
+  background: $transparent;
+}
+#lsp-block-datetimepicker .xdsoft_noselect::selection {
+  background: $transparent;
+}
+#lsp-block-datetimepicker .xdsoft_noselect::-moz-selection {
+  background: $transparent;
+}
+#lsp-block-datetimepicker.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box {
+  border-bottom-color: $lessGrayColor;
+}
+#lsp-block-datetimepicker.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div {
+  background: $whiteColor;
+  border-top-color: $lessGrayColor;
+  color: $moreGrayColor;
+}
+#lsp-block-datetimepicker.xdsoft_datetimepicker .xdsoft_label {
+  background-color: $whiteColor;
+}
+#lsp-block-datetimepicker.xdsoft_datetimepicker .xdsoft_label > .xdsoft_select {
+  border-color: $grayColor;
+  background: $whiteColor;
+}
+#lsp-block-datetimepicker.xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option:hover {
+  color: $whiteColor;
+  background: $hoverColor;
+}
+#lsp-block-datetimepicker.xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option.xdsoft_current {
+  background: $thirdColor;
+  box-shadow: $mainColor 0 1px 3px 0 inset;
+  color: $whiteColor;
+}
+#lsp-block-datetimepicker.xdsoft_datetimepicker .xdsoft_calendar td,
+#lsp-block-datetimepicker.xdsoft_datetimepicker .xdsoft_calendar th {
+  background: $whiteColor;
+  border-color: $lessGrayColor;
+  color: $moreGrayColor;
+}
+#lsp-block-datetimepicker.xdsoft_datetimepicker .xdsoft_calendar th {
+  background: $lessGrayColor;
+}
+#lsp-block-datetimepicker.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_today {
+  color: $thirdColor;
+}
+#lsp-block-datetimepicker.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
+#lsp-block-datetimepicker.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+#lsp-block-datetimepicker.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
+  background: $thirdColor;
+  box-shadow: $mainColor 0 1px 3px 0 inset;
+  color: $whiteColor;
+}
+#lsp-block-datetimepicker.xdsoft_datetimepicker .xdsoft_calendar td:hover,
+#lsp-block-datetimepicker.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
+  color: $whiteColor !important;
+  background: $hoverColor !important;
+}
+#lsp-block-datetimepicker.xdsoft_datetimepicker .xdsoft_calendar th {
+  color: $moreGrayColor;
+}
+#lsp-block-datetimepicker.xdsoft_datetimepicker .xdsoft_copyright {
+  color: $grayColor !important;
+}
+#lsp-block-datetimepicker.xdsoft_datetimepicker .xdsoft_copyright a {
+  color: $lessGrayColor !important;
+}
+#lsp-block-datetimepicker.xdsoft_datetimepicker .xdsoft_copyright a:hover {
+  color: $moreGrayColor !important;
+}
+#lsp-block-datetimepicker .xdsoft_time_box {
+  border-color: $grayColor;
+}
+#lsp-block-datetimepicker .xdsoft_scrollbar > .xdsoft_scroller {
+  background: $grayColor !important;
+}
+#lsp-block-gift .lsp-block-gift-item-name{
+  color: $blackColor;
+}
+#lsp-block-happy-hour .lsp-block-hh-product-old-price{
+  color: $moreGrayColor;
+}
+#lsp-block-happy-hour .lsp-block-hh-product-new-price{
+  color: $mainColor;
+}
+#lsp-block-happy-hour .lsp-block-hh-product-desc{
+  color: $blackColor;
+}
+#lsp-block-item-detail .lsp-modifiers-container {
+  border-top-color: $grayColor;
+}
+#lsp-block-item-detail .lsp-detail-energy-cont {
+  border-top-color: $grayColor;
+}
+#lsp-block-item-detail .lsp-modifier-item {
+  background: $transparent;
+}
+#lsp-block-item-detail .lsp-modifier-amont {
+  color: $summColor;
+}
+#lsp-block-item-detail .lsp-modifier-summ-value {
+  color: $summColor;
+}
+#lsp-block-item-detail .lsp-modifier-summ-type {
+  color: $mainColor;
+}
+#lsp-block-item-detail .lsp-detail-price-total-valute,
+#lsp-block-item-detail .lsp-detail-price-total {
+  color: $mainColor;
+}
+#lsp-block-item-detail .lsp-modifier-group.lsp-modifier-group-error .lsp-modifier-group-title-text,
+#lsp-block-item-detail .lsp-modifier-group.lsp-modifier-group-error .lsp-modifer-group-minmax-delimeter,
+#lsp-block-item-detail .lsp-modifier-group.lsp-modifier-group-error .lsp-modifer-group-minmax-title,
+#lsp-block-item-detail .lsp-modifier-group.lsp-modifier-group-error .lsp-modifer-group-minmax-value {
+  color: $mainColor;
+}
+#lsp-block-item-detail .lsp-modifer-group-error {
+  color: $mainColor;
+}
+#jstore-css .jstore-slider .lsp-slider-prev{
+  background: $mainColor;
+  color: $whiteColor;
+}
+#jstore-css .jstore-slider .lsp-slider-next{
+  background: $mainColor;
+  color: $whiteColor;
+}
+#lsp-block-content .jstore-order-status-item-content,
+.jstore-tag .jstore-order-status-item-content{
+  color: $blackColor;
+  border-color: $mainColor;
+}
+#lsp-block-content .jstore-order-status-active .jstore-order-status-item-content,
+.jstore-tag .jstore-order-status-active .jstore-order-status-item-content{
+  background: $mainColor;
+  color: $whiteColor;
+}
+#lsp-block-content .jstore-order-status-complete .jstore-order-status-item-content,
+.jstore-tag .jstore-order-status-complete .jstore-order-status-item-content{
+  border-color: $secondColor;
+  background: $thirdColor;
+  color: $whiteColor;
+}
+#lsp-block-items-popup .lsp-popup-price-total-valute,
+#lsp-block-items-popup .lsp-popup-price-total{
+  color: $mainColor;
+}
+
+//стилизация скролла корзины
+
+#lsp-header-cart::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: $lessGrayColor;
+}
+
+#lsp-header-cart::-webkit-scrollbar
+{
+  background-color: $lessGrayColor;
+}
+
+#lsp-header-cart::-webkit-scrollbar-thumb
+{
+  background-color: $mainColor;
+}
+
+#jstore-css {
+  .content-left-side {
+    .arrow{
+      svg{
+        color: $whiteColor !important;
+      }
+    }
+    .nav-menu{
+      border: 1px solid $thirdColor;
+    }
+
+    .menu-more,
+    .recommendation-more,
+    .happy-hour-more,
+    .lsp-block-gift-more,
+    .cart-more,
+    .cart-to-order{
+      color: $whiteColor;
+      background-color: $mainColor;
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  #jstore-css {
+    .content-left-side {
+      .lsp-block-recommendation-wrapper {
+        h2.lsp-title {
+          border: 1px solid $thirdColor;
+        }
+      }
+    }
+  }
+}

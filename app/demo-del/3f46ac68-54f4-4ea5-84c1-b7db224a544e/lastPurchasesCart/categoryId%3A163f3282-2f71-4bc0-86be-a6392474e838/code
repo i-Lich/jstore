@@ -1,0 +1,36 @@
+<!-- Код необходимо разместить внутри тега <head> -->
+<!-- <head> -->
+<script>
+//window.jStoreConfig.restaurant - Содержит идентификатор ресторана.
+window.jStoreConfig = {
+    "restaurant" : "3f46ac68-54f4-4ea5-84c1-b7db224a544e",
+    
+    'templates': [
+        {
+            'type': 'lastPurchases#top_recommendation',// #top_recommendation - ID блока,
+            // который должен быть размещён на странице, и в который будет веведено содержимое шаблона
+
+            'template' : '#recommendationBlockTemplate', // Шаблон блока будет браться из содержимого тега с id 'recommendationBlockTemplate'
+
+            'properties': {
+                'sliderUse': true, // Товары будут выводиться с использованием слайдера элементов
+                'visible': ['order'] // Показать блок только на странице заказа
+            }
+        }
+    ]
+};
+
+</script>
+<script src="https://deliverywiget.iiko.ru/v2_0/libs/require.js" data-main="https://deliverywiget.iiko.ru/v2_0/app/config"></script>
+<!-- <\head> -->
+
+
+<!-- Код размещаем перед контентной областью виджета #lsp-block-content.  -->
+<!-- Определяем место, где будет показан блок -->
+<div id="top_recommendation" class="jstore-block lsp-block-items-list lsp-block-lastPurchases" style="margin-top: 10px"></div>
+
+<!-- Шаблоны. Размещаем внутри тега <body>. Следим, чтобы не было дублей "id":  -->
+<script type="text/html" id="recommendationBlockTemplate">
+    <h2 class="jstore-tag h1">У нас так же покупают:</h2>
+    <div class="jstore-tag lsp-js-items" style="padding-bottom: 30px;"></div>
+</script>

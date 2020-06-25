@@ -1,0 +1,86 @@
+<!-- Код необходимо разместить внутри тега <head> -->
+<!-- <head> -->
+<script>
+//window.jStoreConfig.restaurant - Содержит идентификатор ресторана.
+window.jStoreConfig = {
+    "restaurant" : "3f46ac68-54f4-4ea5-84c1-b7db224a544e",
+    
+    'templates': [
+        {
+            'type': 'itemsFilter#custom-block',
+            'template': '#custom-block-template',
+            'properties': {
+                'categories': [
+                    "163f3282-2f71-4bc0-86be-a6392474e838"//выводим конкретную категорию
+                ]
+            }
+        },
+        {
+            'type': 'itemsFilter#custom-block->catalogItem',
+            'class': 'page-toppings',
+            'template': '#custom-block-item-template'//кастомизируем ещё и элементы блока
+        }
+    ]
+};
+
+</script>
+<script src="https://deliverywiget.iiko.ru/v2_0/libs/require.js" data-main="https://deliverywiget.iiko.ru/v2_0/app/config"></script>
+<!-- <\head> -->
+
+
+<!-- Код размещаем перед контентной областью виджета #lsp-block-content.  -->
+<div id="custom-block" class="jstore-block lsp-block-items-filter"></div>
+
+
+<!-- Шаблоны. Размещаем внутри тега <body>. Следим, чтобы не было дублей "id":  -->
+<script type="text/html" id="custom-block-template">
+    <h2 class="h1" style="margin: 20px 0 20px">Отдельный блок категории:</h2>
+    <div class="lsp-js-items lsp-block-items-list"></div>
+</script>
+<script type="text/html" id="custom-block-item-template">
+    <div class="jstore-tag lsp-block-item-name">
+        <a href="<%= url %>" class="jstore-tag jstore-js-detailLink"><%= name %></a>
+    </div>
+    <div class="jstore-tag lsp-block-item-image">
+        <a class="jstore-tag lsp-block-item-image-link jstore-js-detailLink" href="<%= url %>">
+            <% if(tags.length){ %><div class="jstore-tag lsp-block-item-tags"><% _.each(tags, function(tag){ %><!--
+        --><span data-id="<%= tag.translitName %>" class="jstore-tag lsp-block-item-tag <%= tag.className %>" title="<%= tag.name %>"></span><!--
+    --><% }); %></div><% } %>
+            <img class="jstore-tag" title="<%= name %>"
+                 data-jstore-src="mediumImageUrl">
+        </a>
+    </div>
+    <div class="jstore-tag lsp-block-item-description"
+         data-jstore-value="description"></div>
+    <div class="jstore-tag lsp-block-item-price">
+    <span class="jstore-tag lsp-block-item-price-value"
+          data-jstore-value="cost"></span> <span class="jstore-tag lsp-block-item-measurement"><%= jStoreApp.getCurrency()%></span>
+    </div>
+
+    <!-- Цель кастомизации. Выводим переключатели  -->
+    <div class="jstore-tag" style="margin-bottom: 40px;">
+        <div class="jstore-tag lsp-modifier-group lsp-js-types-container"></div>
+    </div>
+
+    <!-- Цель кастомизации. Заменяем кнопки на нужные нам  -->
+    <div class="jstore-tag select-plus-minus">
+        <input type="button" value="-" class="jstore-tag lsp-button-minus jstore-js-amountMinus">
+        <input data-jstore-value="cartCount" class="jstore-tag">
+        <input type="button" value="+" class="jstore-tag lsp-button-plus jstore-js-amountPlus">
+    </div>
+    <!--  -->
+</script>
+
+<!-- Немного стилей, чтобы карточка товара выглядела удобно для пользователя -->
+<style type="text/css">
+    .jstore-tag.page-toppings {
+        width: 45%!important;
+        margin: 0 1% 10px 0!important;
+        padding: 2% 10px!important;
+        height: auto!important;
+    }
+    .jstore-tag.lsp-type-modifer-group-title {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+</style><!-- </body> -->

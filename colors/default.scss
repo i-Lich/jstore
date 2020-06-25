@@ -1,0 +1,12 @@
+@import "vars";
+//
+//////default.css
+$mainColor: hsl(91, 44%, 54%);
+$secondColor: hsl(91, 44%, 79%);
+//$mainColor: hsl(0, 0%, 0%);
+$thirdColor: hsl(91, 44%, 94%);
+$hoverColor: hsl(91, 44%, 44%);
+//
+body{
+  @import "template-colors";
+}

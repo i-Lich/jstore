@@ -1,0 +1,22 @@
+
+.page-short #header-navbar{
+  display: flex;
+}
+jdiv{
+  z-index: 1!important;
+}
+@media (max-width: 610px) {
+  jdiv .button_1O{
+       width: 50px;
+       height: 50px;
+     }
+}
+@media (max-width: 440px) {
+  .nav-header > li.logo{
+  display: none;
+  }
+  jdiv .button_1O{
+       width: 40px;
+       height: 40px;
+     }
+}

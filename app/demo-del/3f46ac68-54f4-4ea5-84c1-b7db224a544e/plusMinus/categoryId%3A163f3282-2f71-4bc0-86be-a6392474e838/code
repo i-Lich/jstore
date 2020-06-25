@@ -1,0 +1,165 @@
+<!-- Код необходимо разместить внутри тега <head> -->
+<!-- <head> -->
+<script>
+//window.jStoreConfig.restaurant - Содержит идентификатор ресторана.
+window.jStoreConfig = {
+    "restaurant" : "3f46ac68-54f4-4ea5-84c1-b7db224a544e",
+    
+    'templates': [
+        {
+            'type': 'catalogItem',
+            'template': '#plusMinus',
+            'filter' : {
+                'categories': [
+                    '163f3282-2f71-4bc0-86be-a6392474e838',//Только для соусов
+                    '5a54b622-b4c7-4976-b1ce-4aefc6617cbc'//и напитков
+                ]
+            }
+        },
+        {
+            'type': 'itemPopUp',
+            'template': '#plusMinusPopUp',
+            'properties' : {
+                'closeAfterToCartSuccess' : false//После того, как товар добавлен в корзину, попап не закрываем
+            },
+            'filter' : {
+                'categories': [
+                    '163f3282-2f71-4bc0-86be-a6392474e838',//Только для соусов
+                    '5a54b622-b4c7-4976-b1ce-4aefc6617cbc'//и напитков
+                ]
+            }
+        }
+    ]
+};
+</script>
+<script src="https://deliverywiget.iiko.ru/v2_0/libs/require.js" data-main="https://deliverywiget.iiko.ru/v2_0/app/config"></script>
+<!-- <\head> -->
+
+
+<!-- Шаблоны. Размещаем внутри тега <body>. Следим, чтобы не было дублей "id":  -->
+<!-- Шаблон в списке товаров -->
+<script type="text/html" id="plusMinus">
+    <div class="jstore-tag lsp-block-item-name">
+        <a href="<%= url %>" class="jstore-tag jstore-js-detailLink"><%= name %></a>
+    </div>
+    <div class="jstore-tag lsp-block-item-image">
+        <a class="jstore-tag lsp-block-item-image-link jstore-js-detailLink" href="<%= url %>">
+            <% if(tags.length){ %><div class="jstore-tag lsp-block-item-tags"><% _.each(tags, function(tag){ %><!--
+        --><span data-id="<%= tag.translitName %>" class="jstore-tag lsp-block-item-tag <%= tag.className %>" title="<%= tag.name %>"></span><!--
+    --><% }); %></div><% } %>
+            <img class="jstore-tag" title="<%= name %>"
+                 data-jstore-src="mediumImageUrl">
+        </a>
+    </div>
+    <div class="jstore-tag lsp-block-item-description"
+         data-jstore-value="description"></div>
+    <div class="jstore-tag lsp-block-item-price">
+    <span class="jstore-tag lsp-block-item-price-value"
+          data-jstore-value="cost"></span> <span class="jstore-tag lsp-block-item-measurement"><%= jStoreApp.getCurrency()%></span>
+    </div>
+
+    <!-- Цель кастомизации. Заменяем кнопки на нужные нам  -->
+    <div class="jstore-tag select-plus-minus">
+        <input type="button" value="-" class="jstore-tag lsp-button-minus jstore-js-amountMinus">
+        <input data-jstore-value="cartCount" class="jstore-tag">
+        <input type="button" value="+" class="jstore-tag lsp-button-plus jstore-js-amountPlus">
+    </div>
+    <!--  -->
+</script>
+
+<!-- Шаблон в всплывающем окне -->
+<script type="text/html" id="plusMinusPopUp">
+    <div class="jstore-tag lsp-popup-item-image-c">
+        <div class="jstore-tag lsp-popup-item-image">
+            <% if(tags.length){ %><div class="jstore-tag lsp-block-item-tags"><% _.each(tags, function(tag){ %><!--
+        --><span class="jstore-tag lsp-block-item-tag lsp-block-item-tag-<%= tag.translitName %>" title="<%= tag.name %>"></span><!--
+        --><% }); %></div><% } %>
+            <img class="jstore-tag" title="<%= name %>"
+                 data-jstore-src="largeImageUrl">
+        </div>
+    </div>
+
+    <div class="jstore-tag lsp-popup-item-description-block">
+        <div class="jstore-tag lsp-popup-item-name"
+             data-jstore-value="name"></div>
+        <div class="jstore-tag lsp-popup-item-description"
+             data-jstore-value="description"></div>
+        <div class="jstore-tag lsp-js-typeModifiers-block">
+            <div class="jstore-tag lsp-modifier-group lsp-js-types-container"></div>
+        </div>
+
+        <div class="jstore-tag lsp-popup-item-price-c">
+            <div class="jstore-tag lsp-popup-item-count-c">
+                <!-- Цель кастомизации. Заменяем кнопки на нужные нам  -->
+                <div class="jstore-tag">
+                    <input type="button" value="-" class="jstore-tag lsp-button-minus jstore-js-amountMinus">
+                    <input data-jstore-value="cartCount" class="jstore-tag" style="width: 30px; text-align: center">
+                    <input type="button" value="+" class="jstore-tag lsp-button-plus jstore-js-amountPlus">
+                </div>
+                <!-- / -->
+            </div>
+            <strong class="jstore-tag lsp-popup-price-total"
+                    data-jstore-value="count * cost"></strong> <em class="jstore-tag lsp-popup-price-total-valute"><%= jStoreApp.getCurrency()%></em>
+            <div class="jstore-tag jstore-share js-share" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter"></div>
+        </div>
+
+        <div class="jstore-tag lsp-popup-energy-cont"
+             data-jstore-if="fiberAmount || fatAmount || carbohydrateAmount || carbohydrateAmount || energyAmount || weight">
+            <div class="jstore-tag lsp-popup-energy-title"><%= jStoreApp.t('energy_sum') %>:</div>
+            <table class="jstore-tag lsp-popup-energy-table">
+                <tbody>
+                <tr class="jstore-tag lsp-detail-table-fiberAmount"
+                    data-jstore-if="fiberAmount">
+                    <td class="jstore-tag lsp-popup-table-property-name"><%= jStoreApp.t('Proteins')%><span class="jstore-tag lsp-popup-table-property-enum">, <%= jStoreApp.t('Gram')%></span></td>
+                    <td class="jstore-tag lsp-popup-table-property-value">
+                        <span class="jstore-tag lsp-popup-table-property-value lsp-js-item-fiberAmount-value"
+                              data-jstore-value="fiberAmount"></span>
+                    </td>
+                </tr>
+                <tr class="jstore-tag lsp-detail-table-fatAmount"
+                    data-jstore-if="fatAmount">
+                    <td class="jstore-tag lsp-popup-table-property-name"><%= jStoreApp.t('Fats')%><span class="jstore-tag lsp-popup-table-property-enum">, <%= jStoreApp.t('Gram')%></span></td>
+                    <td class="jstore-tag lsp-popup-table-property-value">
+                        <span class="jstore-tag lsp-popup-table-property-value lsp-js-item-fatAmount-value"
+                              data-jstore-value="fatAmount"></span>
+                    </td>
+                </tr>
+                <tr class="jstore-tag lsp-detail-table-carbohydrateAmount"
+                    data-jstore-if="carbohydrateAmount">
+                    <td class="jstore-tag lsp-popup-table-property-name"><%= jStoreApp.t('Carbohydrates')%><span class="jstore-tag lsp-popup-table-property-enum">, <%= jStoreApp.t('Gram')%></span></td>
+                    <td class="jstore-tag lsp-popup-table-property-value">
+                        <span class="jstore-tag lsp-popup-table-property-value  lsp-js-item-carbohydrateAmount-value"
+                              data-jstore-value="carbohydrateAmount"></span>
+                    </td>
+                </tr>
+                <tr class="jstore-tag lsp-detail-table-energyAmount"
+                    data-jstore-if="energyAmount">
+                    <td class="jstore-tag lsp-popup-table-property-name"><%= jStoreApp.t('Nutritional_value')%><span class="jstore-tag lsp-popup-table-property-enum">, <%= jStoreApp.t('CCal')%></span></td>
+                    <td class="jstore-tag lsp-popup-table-property-value">
+                        <span class="jstore-tag lsp-popup-table-property-value lsp-js-item-energyAmount-value"
+                              data-jstore-value="energyAmount"></span>
+                    </td>
+                </tr>
+                <tr class="jstore-tag lsp-detail-table-weight"
+                    data-jstore-if="weight">
+                    <td class="jstore-tag lsp-popup-table-property-name"><%= jStoreApp.t('Weight')%><span class="jstore-tag lsp-popup-table-property-enum">, <%= jStoreApp.t('Gram')%></span></td>
+                    <td class="jstore-tag lsp-popup-table-property-value">
+                        <span class="jstore-tag lsp-popup-table-property-value lsp-js-item-weight-value"
+                              data-jstore-value="weight"></span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="jstore-tag lsp-modifiers-container lsp-js-modifiers-block">
+            <div class="jstore-tag lsp-popup-modifier-title"><%= jStoreApp.t('Additional_ing')%>:</div>
+            <div class="jstore-tag lsp-modifier-group lsp-js-modifiers-container"></div>
+        </div>
+
+        <div class="jstore-tag lsp-block-additional-text"
+             data-jstore-if="seoText"
+             data-jstore-value="seoText"
+        ></div>
+    </div>
+</script>

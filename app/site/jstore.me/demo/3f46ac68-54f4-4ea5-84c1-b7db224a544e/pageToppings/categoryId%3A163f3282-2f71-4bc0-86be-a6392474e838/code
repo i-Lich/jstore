@@ -1,0 +1,60 @@
+<!-- Код необходимо разместить внутри тега <head> -->
+<!-- <head> -->
+<script>
+//window.jStoreConfig.restaurant - Содержит идентификатор ресторана.
+window.jStoreConfig = {
+    "restaurant" : "3f46ac68-54f4-4ea5-84c1-b7db224a544e",
+    
+    'templates': [
+        {
+            'type': 'catalogItem',
+            'template': '#pageToppings',
+            'filter' : {
+                'categories': [
+                    '53c67733-3cfe-45bd-abc0-c3aa0d329050',//выводим только для категории "Пицца 30 см"
+                    '969826ec-6e1b-45a3-b407-977bea1cceed'//и "Пицца 40 см"
+                ]
+            },
+            'class' : 'page-toppings'//добавим класс для блока, чтобы увеличить место для него
+        }
+    ]
+};
+</script>
+<script src="https://deliverywiget.iiko.ru/v2_0/libs/require.js" data-main="https://deliverywiget.iiko.ru/v2_0/app/config"></script>
+<!-- <\head> -->
+
+
+<!-- Шаблоны. Размещаем внутри тега <body>. Следим, чтобы не было дублей "id":  -->
+<!-- Шаблон в списке товаров -->
+<script type="text/html" id="pageToppings">
+    <div class="jstore-tag lsp-block-item-name">
+        <a href="<%= url %>" class="jstore-tag lsp-js-detail-link"><%= name %></a>
+    </div>
+    <div class="jstore-tag lsp-block-item-image">
+        <a class="jstore-tag lsp-block-item-image-link lsp-js-detail-link" href="<%= url %>">
+            <% if(tags.length){ %><div class="jstore-tag lsp-block-item-tags"><% _.each(tags, function(tag){ %><!--
+        --><span data-id="<%= tag.translitName %>" class="jstore-tag lsp-block-item-tag <%= tag.className %>" title="<%= tag.name %>"></span><!--
+    --><% }); %></div><% } %>
+            <% if(typeof(mediumImageUrl) === 'string' && mediumImageUrl){ %>
+            <img class="jstore-tag" src="<%= mediumImageUrl %>" title="<%= name %>">
+            <% } %>
+        </a>
+    </div>
+    <div class="jstore-tag" style="margin-bottom: 40px;">
+        <div class="jstore-tag lsp-modifier-group lsp-js-types-container"></div>
+    </div>
+    <div class="jstore-tag lsp-block-item-price">
+        <span class="jstore-tag lsp-block-item-price-value lsp-js-item-price-value"><%= cost %></span> <span class="jstore-tag lsp-block-item-measurement"><%= jStoreApp.getCurrency()%></span>
+    </div>
+    <span class="jstore-tag lsp-block-item-add-to-cart lsp-js-tocart lsp-button"><%= jStoreApp.t('To_cart')%></span>
+</script>
+
+<!-- Немного стилей, чтобы карточка товара выглядела удобно для пользователя -->
+<style type="text/css">
+    .jstore-tag.page-toppings {
+        width: 45%!important;
+        margin: 0 1% 10px 0!important;
+        padding: 2% 10px!important;
+        height: auto!important;
+    }
+</style>

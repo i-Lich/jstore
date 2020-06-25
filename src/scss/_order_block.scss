@@ -1,0 +1,18 @@
+#jstore-css .lsp-js-delivery-type-cont input{
+  min-width: 40px;
+}
+#jstore-css #lsp-block-order-form .lsp-js-form-field-payment_type_CASH_sum span.label-row-text{
+  margin-right: 10px;
+}
+@media (max-width: 830px) {
+  #lsp-block-content .lsp-form .label-row.label-row-half,
+  #jstore-css .jstore-block .lsp-form .label-row.label-row-half,
+  .jstore-tag .lsp-form .label-row.label-row-half{
+    width: 100%;
+  }
+  #lsp-block-content .lsp-form .label-row-text,
+  #jstore-css .jstore-block .lsp-form .label-row-text,
+  .jstore-tag .lsp-form .label-row-text{
+    width: auto;
+  }
+}

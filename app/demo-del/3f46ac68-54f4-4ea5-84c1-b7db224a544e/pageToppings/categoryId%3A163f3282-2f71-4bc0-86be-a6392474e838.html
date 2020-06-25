@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--[if IE 9]>
+<html lang="ru" class="ie9 no-focus"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="ru" class="no-focus"><!--<![endif]-->
+<head>
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="">
+<meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="nErWF1djlds4zSsbN6jgByLvypu9D73quB341_aYH4ndHpt4IAfnmG-sHC5Fm49FELmp_O5V7t_cKLKNxPZzyw==">
+<title>Демонстрация возможностей</title>
+
+<meta name="keywords" content="iiko deliveryWidget">
+<meta name="description" content="интеграция сайта с системой iikoDelivery">
+<meta name="fragment" content="!">
+<link href="../../../assets/ed1eb34d/css/bootstrap.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700" rel="stylesheet">
+<link href="../../../assets/f3cb5eaa/js/plugins/slick/slick.min.css" rel="stylesheet">
+<link href="../../../assets/f3cb5eaa/js/plugins/slick/slick-theme.min.css" rel="stylesheet">
+<link href="../../../assets/f3cb5eaa/js/plugins/select2/select2.min.css" rel="stylesheet">
+<link href="../../../assets/f3cb5eaa/js/plugins/fancy/jquery.fancybox.css" rel="stylesheet">
+<link href="../../../assets/f3cb5eaa/js/plugins/ion-rangeslider/css/ion.rangeSlider.min.css" rel="stylesheet">
+<link href="../../../assets/f3cb5eaa/js/plugins/ion-rangeslider/css/ion.rangeSlider.skinHTML5.min.css" rel="stylesheet">
+<link href="../../../assets/f3cb5eaa/css/bootstrap.min.css" rel="stylesheet">
+<link href="../../../assets/f3cb5eaa/css/oneui.css" rel="stylesheet">
+<link href="../../../assets/5c31881c/core.css" rel="stylesheet">
+<script src="../../../assets/72cba342/jquery.js"></script>
+<script src="../../../assets/bf268580/yii.js"></script>
+<script src="../../../assets/ed1eb34d/js/bootstrap.js"></script>
+<script src="../../../assets/f3cb5eaa/js/core/bootstrap.min.js"></script>
+<script src="../../../assets/f3cb5eaa/js/core/jquery.scrollLock.min.js"></script>
+<script src="../../../assets/f3cb5eaa/js/core/jquery.slimscroll.min.js"></script>
+<script src="../../../assets/f3cb5eaa/js/core/jquery.appear.min.js"></script>
+<script src="../../../assets/f3cb5eaa/js/core/jquery.countTo.min.js"></script>
+<script src="../../../assets/f3cb5eaa/js/core/jquery.placeholder.min.js"></script>
+<script src="../../../assets/f3cb5eaa/js/core/js.cookie.min.js"></script>
+<script src="../../../assets/f3cb5eaa/js/plugins/fancy/jquery.fancybox.js"></script>
+<script src="../../../assets/f3cb5eaa/js/plugins/slick/slick.min.js"></script>
+<script src="../../../assets/f3cb5eaa/js/plugins/chartjs/Chart.min.js"></script>
+<script src="../../../assets/f3cb5eaa/js/plugins/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+<script src="../../../assets/f3cb5eaa/js/app.js"></script>
+<script src="../../../assets/5c31881c/core.js"></script>
+<link href="https://deliverywiget.iiko.ru/v2_0/assets/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="shortcut icon" href="../../../assets/5c31881c/img/favicon.ico" type="image/x-icon">
+            <!-- Demo script start -->
+        <!-- Код необходимо разместить внутри тега <head> -->
+<!-- <head> -->
+<script>
+//window.jStoreConfig.restaurant - Содержит идентификатор ресторана.
+window.jStoreConfig = {
+    "restaurant" : "3f46ac68-54f4-4ea5-84c1-b7db224a544e",
+    "urls" : {"documentRoot" : ""},
+    'templates': [
+        {
+            'type': 'catalogItem',
+            'template': '#pageToppings',
+            'filter' : {
+                'categories': [
+                    '53c67733-3cfe-45bd-abc0-c3aa0d329050',//выводим только для категории "Пицца 30 см"
+                    '969826ec-6e1b-45a3-b407-977bea1cceed'//и "Пицца 40 см"
+                ]
+            },
+            'class' : 'page-toppings'//добавим класс для блока, чтобы увеличить место для него
+        }
+    ]
+};
+</script>
+<script src="https://deliverywiget.iiko.ru/v2_0/libs/require.js" data-main="https://deliverywiget.iiko.ru/v2_0/app/config"></script>
+<!-- <\head> -->
+        <!-- Demo script end -->
+    </head>
+<body class="page-short"><div id="page-container" class="sidebar-l side-scroll header-navbar-fixed">
+
+    <nav id="sidebar">
+    <!-- Sidebar Scroll Container -->
+    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 768px;"><div id="sidebar-scroll" style="overflow: hidden; width: auto; height: 768px;">
+            <!-- Sidebar Content -->
+            <!-- Adding .sidebar-mini-hide to an element will hide it when the sidebar is in mini mode -->
+            <div class="sidebar-content">
+                <!-- Side Header -->
+                <div class="side-header side-content" style="background: #FFF;">
+                    <button class="btn btn-link text-gray pull-right hidden-md hidden-lg" type="button" data-toggle="layout" data-action="sidebar_close">
+                        <i class="fa fa-times"></i>
+                    </button>
+
+                    <a class="h5 img-c push-5-t sidebar-logo-img" href="../../../admin/settings.html"></a>
+                </div>
+                <!-- END Side Header -->
+
+                <!-- Side Content -->
+                <div class="side-content">
+                    <ul id="w0" class="nav-main"><li class="hidden-lg active open"><a class="active" href="../../index.html">Демонстрация возможностей</a></li>
+<li class="hidden-lg"><a href="../../../instruction/index.html">Инструкция к подключению</a></li>
+<li class="hidden-lg"><a href="../../../site/releases.html">История обновлений</a></li></ul>                </div>
+                <!-- END Side Content -->
+            </div>
+            <!-- Sidebar Content -->
+        </div><div class="slimScrollBar" style="background: rgb(255, 255, 255); width: 5px; position: absolute; top: 0px; opacity: 0.35; display: none; border-radius: 7px; z-index: 99; right: 2px; height: 768px;"></div><div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 1; z-index: 90; right: 2px;"></div></div>
+    <!-- END Sidebar Scroll Container -->
+</nav>
+    <header id="header-navbar" class="content-mini content-mini-full">
+        <!-- Header Navigation Left -->
+        <ul class="nav-header push-20-l"><li class="hidden-lg"><h3><button class="btn btn-default" data-toggle="layout" data-action="sidebar_toggle" type="button"><i class="fa fa-navicon"></i></button></h3></li>
+<li class="logo push-5-l push-20-r"><a href="../../../admin/settings.html"></a></li>
+<li class="hidden-xs visible-lg push-20-r active"><a href="../../../demo.html">Демонстрация</a></li>
+<li class="hidden-xs visible-lg push-20-r"><a href="../../../instruction.1.html">Инструкция</a></li></ul>        <!-- END Header Navigation Left -->
+    </header>
+
+    <main id="main-container">
+        <div class="content content-narrow">
+            <div class="row push-50" id="jstore-css">
+    <div class="col-xs-12">
+        <div id="jstore-css" style="max-width: 950px; margin: 0 auto">
+            <div class="content-left-side">
+                <p class="push-5"><a href="categoryId%253A163f3282-2f71-4bc0-86be-a6392474e838/code" target="_blank"><em class="fa fa-external-link push-5-r"></em>Посмотреть код примера</a></p>                    <div class="jstore-tag jstore-block-search"></div>
+                    <div id="lsp-block-restinfo" class="lsp-block-restinfo"></div>
+                    <div class="lsp-block-terminalinfo jstore-block jstore-tag"></div>
+                    <div id="lsp-block-userinfo" class="lsp-block-userinfo"></div>
+                    <div id="lsp-block-tree" class="lsp-block-menu-tree">
+                        Меню загружается...
+                    </div>
+                    <div id="lsp-block-cart" class="lsp-block-cart"></div>
+                    <div id="lsp-block-gift" class="lsp-block-gift"></div>
+                    <div id="lsp-block-happy-hour" class="lsp-block-happy-hour"></div>
+
+                    <div id="lsp-block-recommendation" class="lsp-block-recommendation"></div>
+                            </div>
+            <div class="content-right-side">
+                                    <div id="lsp-block-breadcrums" class="lsp-block-breadcrumbs"></div>
+                                                                <div id="lsp-block-content">Список блюд сейчас загрузится...</div>
+                                                </div>
+        </div>
+    </div>
+</div>
+<!-- Шаблон в списке товаров -->
+<script type="text/html" id="pageToppings">
+    <div class="jstore-tag lsp-block-item-name">
+        <a href="https://jstore.me/demo/3f46ac68-54f4-4ea5-84c1-b7db224a544e/pageToppings/&lt;%=&#32;url&#32;%&gt;" class="jstore-tag lsp-js-detail-link"><%= name %></a>
+    </div>
+    <div class="jstore-tag lsp-block-item-image">
+        <a class="jstore-tag lsp-block-item-image-link lsp-js-detail-link" href="https://jstore.me/demo/3f46ac68-54f4-4ea5-84c1-b7db224a544e/pageToppings/&lt;%=&#32;url&#32;%&gt;">
+            <% if(tags.length){ %><div class="jstore-tag lsp-block-item-tags"><% _.each(tags, function(tag){ %><!--
+        --><span data-id="<%= tag.translitName %>" class="jstore-tag lsp-block-item-tag <%= tag.className %>" title="<%= tag.name %>"></span><!--
+    --><% }); %></div><% } %>
+            <% if(typeof(mediumImageUrl) === 'string' && mediumImageUrl){ %>
+            <img class="jstore-tag" src="https://jstore.me/demo/3f46ac68-54f4-4ea5-84c1-b7db224a544e/pageToppings/&lt;%=&#32;mediumImageUrl&#32;%&gt;" title="<%= name %>">
+            <% } %>
+        </a>
+    </div>
+    <div class="jstore-tag" style="margin-bottom: 40px;">
+        <div class="jstore-tag lsp-modifier-group lsp-js-types-container"></div>
+    </div>
+    <div class="jstore-tag lsp-block-item-price">
+        <span class="jstore-tag lsp-block-item-price-value lsp-js-item-price-value"><%= cost %></span> <span class="jstore-tag lsp-block-item-measurement"><%= jStoreApp.getCurrency()%></span>
+    </div>
+    <span class="jstore-tag lsp-block-item-add-to-cart lsp-js-tocart lsp-button"><%= jStoreApp.t('To_cart')%></span>
+</script>
+
+<!-- Немного стилей, чтобы карточка товара выглядела удобно для пользователя -->
+<style type="text/css">
+    .jstore-tag.page-toppings {
+        width: 45%!important;
+        margin: 0 1% 10px 0!important;
+        padding: 2% 10px!important;
+        height: auto!important;
+    }
+</style>        </div>
+    </main>
+
+    <footer id="page-footer" class="content-mini content-mini-full font-s12 bg-gray-lighter clearfix">
+        <div class="pull-left">
+            <a class="font-w600" href="../../../index.html" target="_blank">jstore.me</a> © <span>2020</span>
+        </div>
+    </footer>
+
+</div>
+
+
+<!-- Page JS Code -->
+<script>
+    $(function () {
+        // Init page helpers (Slick Slider plugin)
+        App.initHelpers('slick');
+
+        $('.js-slider a').fancybox({
+            openEffect: 'fade',
+            closeEffect: 'fade',
+            nextEffect: 'fade',
+            prevEffect: 'fade',
+            padding: 0
+        });
+    });
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function () {
+            try {
+                w.yaCounter26939808 = new Ya.Metrika({
+                    id: 26939808,
+                    webvisor: true,
+                    trackHash: true
+                });
+            } catch (e) {
+            }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () {
+                n.parentNode.insertBefore(s, n);
+            };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+            f();
+        }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/26939808" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
+<!-- END Yandex.Metrika counter -->
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-36219931-4', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+    <!-- BEGIN JIVOSITE CODE {literal} -->
+    <script src="https://code.jivosite.com/widget/hbV9ReP8MF" async></script>
+    <!-- {/literal} END JIVOSITE CODE -->
+</body>
+</html>
