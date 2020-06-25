@@ -146,13 +146,6 @@ $(function() {
         });
     }]);
 
-
-//test modernizr
-    if (Modernizr.touch){
-        alert('touch')
-    }
-
-
 });
 
 

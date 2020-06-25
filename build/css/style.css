@@ -3234,6 +3234,9 @@ a.all-menu {
 .arrow i {
   font-size: 40px; }
 
+html.touchevents #jstore-css .lsp-block-items-list .lsp-block-item-add-to-cart {
+  display: block; }
+
 /* Large desktops and laptops */
 @media (max-width: 992px) {
   #jstore-css #lsp-block-content .lsp-js-block-items .lsp-block-item {
