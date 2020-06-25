@@ -6588,3 +6588,8 @@ a.all-menu {
     right: -137px; }
   .jstore-header-fixed-dropdown #lsp-block-userinfo {
     width: auto; } }
+
+@media (max-width: 425px) {
+  header .jstore-header-fixed-dropdown .fixed-cart #lsp-header-cart {
+    width: 95vw;
+    right: -9px; } }

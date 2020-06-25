@@ -45,6 +45,7 @@
   }
 
 }
+
 @media (max-width: 665px) {
   #lsp-block-items-popup .lsp-modifier-item {
     display: inline-grid;
@@ -246,10 +247,6 @@
   }
 }
 
-
-
-
-
 @media (max-width: 480px){
   #jstore-css{
     .content-left-side{
@@ -289,5 +286,18 @@
     //width: 100vw;
     //min-height: 100vh;
     //padding: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  header{
+    .jstore-header-fixed-dropdown{
+      .fixed-cart{
+        #lsp-header-cart{
+            width: 95vw;
+            right: -9px;
+        }
+      }
+    }
   }
 }
