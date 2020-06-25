@@ -67,10 +67,6 @@
     z-index: 1001;
   }
 
-  ul.jstore-header-fixed-dropdown {
-    display: flex;
-  }
-
   #lsp-block-items-popup .lsp-modifier-name-c {
     width: 228px;
   }
@@ -128,6 +124,7 @@
       .lsp-block-happy-hour-wrapper,
       .lsp-block-recommendation-wrapper{
         position: relative;
+        overflow: hidden;
       }
       .lsp-block-cart-wrapper{
         #lsp-block-cart{

@@ -102,6 +102,10 @@ $(function() {
 
     window.jStoreEvents = window.jStoreEvents ? window.jStoreEvents : [];
     jStoreEvents.push(['ready', null, function (data) {
+        // обработчкик для "В корзину"
+        jStore.App.cart.on('add', (item) => {
+            console.log(item);
+        });
         let standartBodyClass =  document.body.className;
         console.log(standartBodyClass);
         $('#selectColor').change( function() {

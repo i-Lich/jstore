@@ -2928,7 +2928,9 @@ a {
 
 ul.jstore-header-fixed-dropdown {
   margin-left: auto;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
@@ -3286,10 +3288,6 @@ html.touchevents #jstore-css .lsp-block-items-list .lsp-block-item-add-to-cart {
 @media (max-width: 610px) {
   .page-short #header-navbar {
     z-index: 1001; }
-  ul.jstore-header-fixed-dropdown {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
   #lsp-block-items-popup .lsp-modifier-name-c {
     width: 228px; }
   #jstore-css #lsp-block-content .lsp-js-block-items .lsp-block-item {
@@ -3335,7 +3333,8 @@ html.touchevents #jstore-css .lsp-block-items-list .lsp-block-item-add-to-cart {
   #jstore-css .content-left-side .lsp-block-gift-wrapper,
   #jstore-css .content-left-side .lsp-block-happy-hour-wrapper,
   #jstore-css .content-left-side .lsp-block-recommendation-wrapper {
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
   #jstore-css .content-left-side .lsp-block-cart-wrapper #lsp-block-cart .lsp-cart-items-list {
     margin: 25px 0 0; }
   #jstore-css .content-left-side .lsp-block-cart-wrapper #lsp-block-cart .lsp-info-message {
