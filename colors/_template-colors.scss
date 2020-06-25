@@ -76,7 +76,7 @@
 
   #selectColor{
     select{
-      border: 1px solid $thirdColor;
+      //border: 1px solid $thirdColor;
     }
   }
 
@@ -515,6 +515,9 @@
 
 #jstore-css {
   .content-left-side {
+    .pick-color {
+      border: 1px solid $thirdColor;
+    }
     .arrow{
       svg{
         color: $whiteColor !important;

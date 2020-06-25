@@ -1,9 +1,6 @@
 body .nav-menu a.all-menu:hover {
   color: #88bd56; }
 
-body #selectColor select {
-  border: 1px solid #eff6e9; }
-
 body .jstore-tag {
   color: #333333; }
 
@@ -429,6 +426,9 @@ body #lsp-header-cart::-webkit-scrollbar {
 body #lsp-header-cart::-webkit-scrollbar-thumb {
   background-color: #88bd56; }
 
+body #jstore-css .content-left-side .pick-color {
+  border: 1px solid #eff6e9; }
+
 body #jstore-css .content-left-side .arrow svg {
   color: #ffffff !important; }
 
@@ -450,9 +450,6 @@ body #jstore-css .content-left-side .cart-to-order {
 
 body.red .nav-menu a.all-menu:hover {
   color: #f1281e; }
-
-body.red #selectColor select {
-  border: 1px solid #fbc8c5; }
 
 body.red .jstore-tag {
   color: #333333; }
@@ -879,6 +876,9 @@ body.red #lsp-header-cart::-webkit-scrollbar {
 body.red #lsp-header-cart::-webkit-scrollbar-thumb {
   background-color: #f1281e; }
 
+body.red #jstore-css .content-left-side .pick-color {
+  border: 1px solid #fbc8c5; }
+
 body.red #jstore-css .content-left-side .arrow svg {
   color: #ffffff !important; }
 
@@ -900,9 +900,6 @@ body.red #jstore-css .content-left-side .cart-to-order {
 
 body.turquoise .nav-menu a.all-menu:hover {
   color: #8acab5; }
-
-body.turquoise #selectColor select {
-  border: 1px solid #6CA28F; }
 
 body.turquoise .jstore-tag {
   color: #333333; }
@@ -1329,6 +1326,9 @@ body.turquoise #lsp-header-cart::-webkit-scrollbar {
 body.turquoise #lsp-header-cart::-webkit-scrollbar-thumb {
   background-color: #8acab5; }
 
+body.turquoise #jstore-css .content-left-side .pick-color {
+  border: 1px solid #6CA28F; }
+
 body.turquoise #jstore-css .content-left-side .arrow svg {
   color: #ffffff !important; }
 
@@ -1350,9 +1350,6 @@ body.turquoise #jstore-css .content-left-side .cart-to-order {
 
 body.gray .nav-menu a.all-menu:hover {
   color: gray; }
-
-body.gray #selectColor select {
-  border: 1px solid #cccccc; }
 
 body.gray .jstore-tag {
   color: #333333; }
@@ -1779,6 +1776,9 @@ body.gray #lsp-header-cart::-webkit-scrollbar {
 body.gray #lsp-header-cart::-webkit-scrollbar-thumb {
   background-color: gray; }
 
+body.gray #jstore-css .content-left-side .pick-color {
+  border: 1px solid #cccccc; }
+
 body.gray #jstore-css .content-left-side .arrow svg {
   color: #ffffff !important; }
 
@@ -1800,9 +1800,6 @@ body.gray #jstore-css .content-left-side .cart-to-order {
 
 body.maroon .nav-menu a.all-menu:hover {
   color: maroon; }
-
-body.maroon #selectColor select {
-  border: 1px solid #ff4d4d; }
 
 body.maroon .jstore-tag {
   color: #333333; }
@@ -2229,6 +2226,9 @@ body.maroon #lsp-header-cart::-webkit-scrollbar {
 body.maroon #lsp-header-cart::-webkit-scrollbar-thumb {
   background-color: maroon; }
 
+body.maroon #jstore-css .content-left-side .pick-color {
+  border: 1px solid #ff4d4d; }
+
 body.maroon #jstore-css .content-left-side .arrow svg {
   color: #ffffff !important; }
 
@@ -2250,9 +2250,6 @@ body.maroon #jstore-css .content-left-side .cart-to-order {
 
 body.red .nav-menu a.all-menu:hover {
   color: #f1281e; }
-
-body.red #selectColor select {
-  border: 1px solid #fbc8c5; }
 
 body.red .jstore-tag {
   color: #333333; }
@@ -2678,6 +2675,9 @@ body.red #lsp-header-cart::-webkit-scrollbar {
 
 body.red #lsp-header-cart::-webkit-scrollbar-thumb {
   background-color: #f1281e; }
+
+body.red #jstore-css .content-left-side .pick-color {
+  border: 1px solid #fbc8c5; }
 
 body.red #jstore-css .content-left-side .arrow svg {
   color: #ffffff !important; }
