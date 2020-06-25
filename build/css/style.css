@@ -5953,6 +5953,9 @@ a {
     margin: 0 auto; } }
 
 @media (max-width: 610px) {
+  #lsp-block-popup .lsp-popup-cont {
+    overflow: auto;
+    height: 100vh; }
   #lsp-block-popup .lsp-block-items-popup {
     z-index: 1005; } }
 
