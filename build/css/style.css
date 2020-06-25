@@ -6006,7 +6006,6 @@ a {
     justify-content: center;
     top: 0;
     right: 0;
-    z-index: 3;
     padding: 9px;
     font-size: 18px;
     text-transform: uppercase;
@@ -6308,8 +6307,7 @@ a.all-menu {
 #jstore-css #lsp-block-content .lsp-js-block-items .lsp-block-item:hover .lsp-block-item-name {
   background-color: #ffffff;
   margin: auto 0 0 0;
-  padding-bottom: 5px;
-  z-index: 2; }
+  padding-bottom: 5px; }
 
 #jstore-css #lsp-block-content .lsp-js-block-items .lsp-block-item:hover .lsp-block-item-description {
   min-height: 75px;
@@ -6317,7 +6315,6 @@ a.all-menu {
   -webkit-box-flex: 0;
   -ms-flex-positive: 0;
   flex-grow: 0;
-  z-index: 2;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;

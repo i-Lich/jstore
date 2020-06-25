@@ -59,8 +59,7 @@
     justify-content: center;
     top: 0;
     right: 0;
-
-    z-index: 3;
+    //z-index: 3;
     padding: 9px;
     font-size: 18px;
     text-transform: uppercase;
@@ -388,7 +387,7 @@ a.all-menu{
   background-color: $whiteColor;
   margin: auto 0 0 0;
   padding-bottom: 5px;
-  z-index: 2;
+  //z-index: 2;
 }
 
 #jstore-css #lsp-block-content .lsp-js-block-items .lsp-block-item:hover .lsp-block-item-description {
@@ -402,7 +401,7 @@ a.all-menu{
   min-height: 75px;
   height: auto;
   flex-grow: 0;
-  z-index: 2;
+  //z-index: 2;
   display: inline-flex;
   background-color: white;
   max-height: none;
