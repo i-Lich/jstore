@@ -5853,20 +5853,13 @@ body.teal #jstore-css .content-left-side .cart-to-order {
   display: -ms-flexbox;
   display: flex; }
 
-jdiv {
-  z-index: 1 !important; }
-
 @media (max-width: 610px) {
-  jdiv .button_1O {
-    width: 50px;
-    height: 50px; } }
+  jdiv .__jivoMobileButton {
+    z-index: 1 !important; } }
 
 @media (max-width: 440px) {
   .nav-header > li.logo {
-    display: none; }
-  jdiv .button_1O {
-    width: 40px;
-    height: 40px; } }
+    display: none; } }
 
 html {
   -webkit-box-sizing: border-box;
