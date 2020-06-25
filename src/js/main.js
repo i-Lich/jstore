@@ -59,11 +59,28 @@ $(function() {
         $('#lsp-block-userinfo').toggleClass('open');
     });
 
-    function cartHeight() {
+/*    function cartHeight() {
         if (document.getElementById('lsp-header-cart').classList.contains('open')) {
             let clientWindowHeight = document.documentElement.clientHeight;
             let cartBlockHeight = document.getElementById('lsp-block-cart').offsetHeight + 60;
             let maxCartBlockHeight = cartBlockHeight - (cartBlockHeight - clientWindowHeight) - 65;
+            document.getElementById('lsp-header-cart').style.maxHeight = maxCartBlockHeight + 'px';
+        }
+    }*/
+
+    function cartHeight(){
+        if(document.getElementById('lsp-header-cart').classList.contains('open')) {
+
+            let clientWindowHeight = document.documentElement.clientHeight;
+            let cartBlockTopPosition = document.getElementById('lsp-header-cart').getBoundingClientRect().top;
+            let contentHeight = document.querySelector('body').offsetHeight - cartBlockTopPosition;
+            let cartBlockHeight = document.getElementById('lsp-header-cart').offsetHeight + cartBlockTopPosition;
+            let maxCartBlockHeight = 0;
+            if (contentHeight > clientWindowHeight) {
+                maxCartBlockHeight =  clientWindowHeight - cartBlockTopPosition -15 ;
+            } else{
+                maxCartBlockHeight =  contentHeight -15;
+            }
             document.getElementById('lsp-header-cart').style.maxHeight = maxCartBlockHeight + 'px';
         }
     }

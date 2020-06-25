@@ -1,9 +1,9 @@
 @import "vars";
-////red.css
-$mainColor: hsl(0, 100%, 50%);
-$secondColor: hsl(0, 100%, 75%);
-$thirdColor: hsl(0, 100%, 90%);
-$hoverColor: hsl(0, 100%, 40%);
+
+$mainColor: hsl(3, 88%, 53%);
+$secondColor: hsl(3, 88%, 73%);
+$thirdColor:hsl(3, 88%, 88%);
+$hoverColor: hsl(3, 88%, 33%);
 
 body.red{
   @import "template-colors";
